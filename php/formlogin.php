@@ -1,7 +1,7 @@
 <?php
     if (isset($_POST['login']) && !empty($_POST['login'])) {
         $baza=new mysqli("localhost", "root", "", "baza4b");
-        $zap = $baza->query("SELECT * FROm `osoby`;", MYSQLI_USE_RESULT);
+        $zap = $baza->query("SELECT * FROM `osoby`;", MYSQLI_USE_RESULT);
         foreach($zap as $w) {
             print_r($w);
         }

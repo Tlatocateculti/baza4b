@@ -1,0 +1,13 @@
+/* tworzymy odpowiednie wyświetlenie naszych przycisków (oryginalnie wyświetliłyby się kolejno poziomo;
+   używając flex - wyświetlimy je w jednej linii (domyślny kierunek flex)
+   */
+nav {
+    display: flex;
+}
+.button {
+    border: 1px solid black;
+    background: lightskyblue;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
