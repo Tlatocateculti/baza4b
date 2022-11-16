@@ -6,7 +6,7 @@ function createButtons(btn, lines) {
 		const data = lines[i].split(';')
 		btns+=btn.replace('${target}', data[1]).replace('${caption}', data[0]).replace('${w}', width+'%')
 	}
-	console.log(btn, lines)
+	//console.log(btn, lines)
 	nav.innerHTML=btns
 	document.querySelectorAll(".button").forEach(function(v) {
 		v.onclick = function() {
@@ -46,7 +46,7 @@ function getFile(link, f) {
 			f(xml.responseText) //wywołujemy nasz callback - funkcja wskazana przez drugi parametr; przekazujemy do niej pobraną zawartość pliku
 		}
 	}
-	xml.open("GET", link) //otwieramy połączenie do wskazanego URL, jako GET (pobierż)
+	xml.open("GET", link) //otwieramy połączenie do wskazanego URL, jako GET (pobierz)
 	xml.send() //wysyłamy żądanie
 }
 
