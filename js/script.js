@@ -6,6 +6,7 @@ function createButtons(btn, lines) {
 		const data = lines[i].split(';')
 		btns+=btn.replace('${target}', data[1]).replace('${caption}', data[0]).replace('${w}', width+'%')
 	}
+	console.log(btn, lines)
 	nav.innerHTML=btns
 	document.querySelectorAll(".button").forEach(function(v) {
 		v.onclick = function() {

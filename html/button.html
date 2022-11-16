@@ -1,14 +1,14 @@
 <!-- plik projektu przycisku. TO JEST SZABLON SAMEGO PRZYCISKU, dlatego:
      - niektóre elementy są potencjalnymi zmiennymi, które zostaną zastąpione określonymi wartościami
        już podczas wstawiania w konkretnym miejscu strony WWW
-     - ${w} będzie odpowiadał za szerokość przycisku; w zależności od ilości tworzonych przycisków będzie 
+     - $w będzie odpowiadał za szerokość przycisku; w zależności od ilości tworzonych przycisków będzie 
        to wyliczane w JS
-     - ${target} będzie wskazywał do jakiego pliku przycisk będzie się odwoływał (gdzie ma prowadzić)-->
+     - $target będzie wskazywał do jakiego pliku przycisk będzie się odwoływał (gdzie ma prowadzić)-->
 <div class="button" style="width: ${w};" data-file="${target}">
     <!-- Zamiast id zastosowana zostaje klasa; nie jest to przypadek - przycisk
     będzie wstawiany kilkukrtonie, przez co niemożliwe jest użycie id (poza tym możliwe
     stanie się ustawienie dodatkowych parametrów tekstu na przycisku)
-        ${caption} będzie zastępowany określonym tekstem już w JavaScript
+        $caption będzie zastępowany określonym tekstem już w JavaScript
     -->
     <p class="button_caption">${caption}</p>
 </div>
